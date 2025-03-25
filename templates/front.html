@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% load static %}
+
+
+{% block content %}
+<style>
+
+.row{
+    position: absolute;
+    top: 5px;
+    left: 400px;
+    
+}
+
+
+.start{
+    align-items: center;
+    position: absolute;
+    margin-top: -100px;
+    top: 500px;
+    left: 760px;
+    size: 200px;
+}
+
+</style>
+<!-- <div class="container">
+<img src="{% static 'twitter.jpg' %}" style="height: 800px;  width: 1670px; margin-left: -190px" alt=""> -->
+<div class="container">
+    <div class="row">
+        <h1 style="text-align: center; margin-top: 230px; margin-left: -35px"  >Welcome Here!</h1>
+        <h1 style="text-align: center; margin-top: 10px; margin-left: -30px" >Click Here to go to the website. <br>
+    </div>
+
+<div class="start">
+    <a href="{% url 'tweet_list' %}" class="btn btn-primary mx--4 my--3" style="font-size:20px; margin-left: -50px; margin-top: -20px">Start Now</a>
+    <!-- <button class="btn btn-primary" style="color:antiquewhite; font-size: 23px"><a href="{% url 'tweet_list' %}">Start Now</a></button> -->
+</div>
+</div>
+</div>
+{% endblock %}
